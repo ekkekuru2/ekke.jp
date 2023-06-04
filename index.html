@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+JP:wght@100;400;900&family=Noto+Serif+JP:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+      }
+      .title-main {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 900;
+        font-size: 10vw;
+        color: #084b83;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0 0 2vw 0;
+      }
+      .caption-box {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .title-caption {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 100;
+        font-size: 2vw;
+        color: #000;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 0 0 0.2vw;
+        padding: auto 0;
+      }
+      .main-icon {
+        display: inline-block;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+        vertical-align: middle;
+        width: 4vw;
+        height: 4vw;
+        text-decoration: none;
+        color: #000;
+      }
+      .dot {
+        color: #f69200;
+      }
+      p {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 7vw;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      #links {
+        display: flex;
+        padding: 2vw 0 0 0;
+      }
+      .link-icon {
+        display: block;
+        margin: 0;
+        padding: 0 0.2vw;
+        width: 50px;
+        height: 50px;
+        font-size: 4vw;
+        text-decoration: none;
+        color: #b0b4b6;
+      }
+      .logo-twitter {
+        color: #1da1f2;
+      }
+      .logo-github {
+        color: #000000;
+      }
+      @media screen and (max-width: 959px) {
+        /* 959px以下に適用されるCSS（タブレット用） */
+        .title-main {
+          font-size: 15vw;
+          padding: 0 0 3vw 0;
+        }
+        .title-caption {
+          font-size: 3vw;
+        }
+        .main-icon {
+          width: 6vw;
+          height: 6vw;
+          font-size: 6vw;
+        }
+        #links {
+          padding: 3vw 0 0 0;
+        }
+        .link-icon {
+          width: 6vw;
+          height: 6vw;
+          font-size: 6vw;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        /* 480px以下に適用されるCSS（スマホ用） */
+        .title-main {
+          font-size: 20vw;
+          padding: 0 0 4vw 0;
+        }
+        .title-caption {
+          font-size: 4vw;
+        }
+        .main-icon {
+          width: 8vw;
+          height: 8vw;
+          font-size: 8vw;
+        }
+        #links {
+          padding: 4vw 0 0 0;
+        }
+        .link-icon {
+          width: 8vw;
+          height: 8vw;
+          font-size: 8vw;
+        }
+      }
+    </style>
+    <title>ekke.jp</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1 class="title-main">ekke<span class="dot">.</span>jp</h1>
+      <div class="caption-box">
+        <img src="./favicon.ico" class="main-icon" />
+        <h2 class="title-caption">@ekkekuru2</h2>
+      </div>
+      <div id="links">
+        <a href="https://github.com/ekkekuru2"
+          ><ion-icon
+            class="link-icon logo-github"
+            name="logo-github"
+          ></ion-icon>
+        </a>
+        <a href="https://mi.ekke.jp/@ekkekuru2"
+          ><img class="link-icon" src="https://mi.ekke.jp/favicon.ico"
+        /></a>
+        <a href="https://twitter.com/ekkekuru2">
+          <ion-icon
+            class="link-icon logo-twitter"
+            name="logo-twitter"
+          ></ion-icon>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
