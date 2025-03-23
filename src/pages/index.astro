@@ -1,5 +1,10 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import GitHubMark from '../assets/github-mark.svg';
+import KeyMark from '../assets/key.svg';
+import ScrapboxLogo from '../assets/scrapbox-logo.svg';
+import WritingLogo from '../assets/writing.svg';
+import Me from '../components/Me.astro';
+import SocialLink from '../components/SocialLink.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +12,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Me></Me>
+	<SocialLink image={GitHubMark.src} link="https://github.com/ekkekuru2" title="GitHub"></SocialLink>
+	<SocialLink image={WritingLogo.src} link="https://blog.ekke.jp/" title="Blog" caption="ブログにはある程度まとまった成果物を載せます。"></SocialLink>
+	<SocialLink image={ScrapboxLogo.src} link="https://scrapbox.io/ekkekuru2/" title="Scrapbox" caption="Scrapboxではブログにするまでもない走り書きのメモを公開しています。私の脳内を覗いていってください。" ></SocialLink>
+	<SocialLink image={KeyMark.src} link="/ekkekuru2.asc" title="PGP Key" caption="fingerprint: BD40 0E4B 67A8 62A3 899C  361C 8718 AABA 8344 6696"></SocialLink>
 </Layout>

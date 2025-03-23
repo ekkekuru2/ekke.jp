@@ -1,0 +1,59 @@
+---
+import avatorImage from '../assets/avatorImage.png';
+---
+
+<div id="container">
+	<div class="flex">
+		<a href=""><img class="avator-image" src={avatorImage.src}></a>
+		<div class="basic-info-card">
+			<!--<h1 class="name-jp">日本語</h1><span class="slash">/</span><span class="name-en">English</span>-->
+			<h1 class="name-jp">Ekke</h1><span class="slash">/</span><span class="name-en">@ekkekuru2</span>
+			<span class="caption">コールサイン：JI1SSY</span>
+			<span class="caption">2005年生まれ大学生です</span>
+		</div>
+	</div>
+</div>
+
+<style>
+	#container{
+		display:block;
+		max-width: 500px;
+		margin:50px auto;
+	}
+	.flex{
+		display: flex;
+	}
+	a{
+		text-decoration: none;
+	}
+	.avator-image{
+		display:block;
+		margin:20px;
+		width:100px;
+		height:100px;
+		border-radius: 50%;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+	}
+	.basic-info-card{
+		display:block;
+		margin : auto 0px;
+	}
+	.name-jp{
+		display:inline;
+		font-size: 25px;
+	}
+	.slash{
+		margin: auto 3px 0px 3px ;
+		color:#f69200;
+		font-size: 20px;
+	}
+	.name-en{
+		font-size: 18px;
+	}
+	.caption{
+		display:block;
+		font-size: 16px;
+		color:#585858;
+	}
+
+</style>

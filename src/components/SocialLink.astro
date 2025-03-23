@@ -1,0 +1,47 @@
+---
+interface Props {
+	image?:string
+	link:string
+	title:string
+	caption?:string
+}
+const {image,link,title,caption}=Astro.props;
+---
+
+<div id="sociallink-container">
+	<a class="link" href={link}>
+		<img class="sociallink-image" src={image}>
+		<h3 class="title">{title}</h3>
+	</a>
+	<p class="caption">{caption}</p>
+</div>
+
+<style>
+	#sociallink-container{
+		display:block;
+		max-width: 500px;
+		margin: 5px auto;
+		padding: 10px;
+	}
+	.link{
+		display:flex;
+		text-decoration: none;
+	}
+	.title{
+		display:block;
+		font-size: 20px;
+		margin:auto 0;
+		margin-left: 10px;;
+		color:#084b83;
+	}
+	.sociallink-image{
+		height: 30px;
+		width: 30px;
+		margin:auto 0;
+	}
+	.caption{
+		margin:5px 10px;
+		color:#585858
+	}
+
+</style>
